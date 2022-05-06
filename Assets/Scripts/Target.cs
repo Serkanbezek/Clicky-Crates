@@ -24,8 +24,6 @@ public class Target : MonoBehaviour
 
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-
- 
     }
 
     // Update is called once per frame
