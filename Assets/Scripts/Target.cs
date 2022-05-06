@@ -54,16 +54,16 @@ public class Target : MonoBehaviour
         }
     }
 
-    Vector3 RandomForce()
+    private Vector3 RandomForce()
     {
         return Vector3.up * Random.Range(minSpeed, maxSpeed);
     }
 
-    float RandomTorque()
+    private float RandomTorque()
     {
         return Random.Range(-maxTorque, maxTorque);
     }
-    Vector3 RandomSpawnPos()
+    private Vector3 RandomSpawnPos()
     {
         return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
     }
